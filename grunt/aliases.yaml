@@ -1,0 +1,6 @@
+serve:
+    - 'newer:less'
+    - 'autoprefixer'
+    - 'connect'
+    - 'open:dev'
+    - 'watch:livereload'

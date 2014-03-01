@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'Postmaster';
+  src: url('font/Post.eot');
+  src: url('font/Post.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('font/POST.woff') format('woff'), /* Modern Browsers */ url('font/Post.ttf') format('truetype'), /* Safari, Android, iOS */ url('font/POST.svg#svgFontName') format('svg');
+  
+  /* IE9 Compat Modes */
+  /* Legacy iOS */
+}
+body {
+  font-family: Helvetica;
+}
+h1 {
+  font-family: Postmaster;
+  border-radius: 1rem;
+}
