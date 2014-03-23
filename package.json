@@ -1,7 +1,7 @@
 {
   "name": "Ruislip_Eagles_Website",
   "author": "Chris Powell",
-  "version": "0.0.0-1",
+  "version": "0.0.0-2",
   "repository": "https://github.com/CIPowell/jus.git",
   "main": "app.js",
   "dependencies": {
