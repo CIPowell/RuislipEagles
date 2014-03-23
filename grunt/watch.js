@@ -1,7 +1,11 @@
 module.exports = {
+//    js: {
+//        files : '**/*.js',
+//        tasks : ['node_serverOne']
+//    },
     css: {
         files: '**/*.less',
-        tasks: ['less'],
+        tasks: ['less', 'autoprefixer'],
         options: {
           livereload: true,
         }

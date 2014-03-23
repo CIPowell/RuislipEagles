@@ -7,14 +7,262 @@
      url('font/POST.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
+@eagles-blue: rgba(0,0,255, 0.6);
+
 body
 {
+    background: url('/images/gallery/may.png') fixed bottom right no-repeat;
+    
     font-family: Helvetica;
+    margin: 0 auto;
+    
+    padding: 0 25px;
 }
 
-h1
+a
 {
-    font-family: Postmaster;
+    text-decoration: none;
+}   
 
-    box-sizing: border-box;
+h1, h2
+{
+    font-family: Postmaster;   
+}
+
+header.hero
+{
+    
+    position: relative;
+
+    padding: 0;
+    margin: 0 -25px;
+    overflow: hidden;
+    
+    .logo
+    {
+        box-sizing: border-box;
+        width: 350px;
+        margin: 0;
+        padding: 1rem 2rem;
+        
+        position: absolute; 
+        
+        background: @eagles-blue;
+        
+        img
+        {
+            width:100%;   
+        }
+    }
+        
+    .picgrid
+    {
+        display: inline-block;
+        box-sizing: border-box;
+        width: 100%;
+        height: 351px;
+        
+        box-shadow: -2px 0px black;
+        
+        overflow: hidden;
+        
+        /*column-count: 4;
+        column-gap: 0px;*/
+        
+        img
+        {
+            display: inline-block;
+            width: 100% !important;
+            height: auto !important;   
+            
+            margin-top: -300px;
+            
+            transition: all 0.5s ease;
+            
+            &.out
+            {
+                transform: translate(-100%, 0);
+            }
+        }
+        
+        section
+        {
+            color: white;
+            text-shadow: 1px 1x black;
+
+            position: absolute;
+            top: 25px;
+            right:25px;
+            left:350px;
+            text-align: right;
+            font-size: 24pt;
+            
+             text-shadow:
+               -1px -1px 0 #000,  
+                1px -1px 0 #000,
+                -1px 1px 0 #000,
+                 1px 1px 0 #000;
+            
+            h1{
+                font-size: 44pt;
+                
+                margin-top:0;
+            }
+            
+            p
+            {
+              
+            }
+            
+            a
+            {
+                display: inline-block;
+                color: black;
+                background: silver;
+                border: 2px solid black;
+                
+                text-shadow: none;
+                
+                font-size: 16pt;
+                
+                padding: 0.5em;
+                border-radius: 0.5em;
+                
+                transition: background 0.5s ease;
+                
+                &:hover
+                {
+                    background:white;   
+                }
+            }
+        }
+    }
+}
+
+.homepage > nav
+{
+    text-align: center;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    background: white;
+    
+    margin: 0 -25px;
+    
+    ul
+    {
+        list-style: none;
+        
+        padding: 0;
+         margin: 0;
+        
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    
+    li 
+    {
+        
+       padding: 0;
+        margin: 0;
+       
+    }
+    
+    a
+    {
+        font-family: postmaster;
+        font-size: 24pt;
+        
+        color: black;
+        
+        padding: 15px 25px;
+        
+        text-decoration: none;
+
+        display: inline-block;
+        
+        transition: all 0.5s ease;
+        
+        &:hover
+        {
+            color : white;
+            background-color: @eagles-blue;
+        }
+    }
+}
+
+header
+{
+    
+    //background-color: @eagles-blue;
+    
+    position: relative;
+    
+    nav
+    {
+        display: inline-block;
+        box-sizing: border-box;
+        vertical-align: top;  
+        
+        height: 100%;
+        
+        a
+        {
+            color: white;
+            font-family: postmaster;
+            font-size: 24pt;
+            
+            text-decoration: none;
+        }
+    }
+    
+    div.logo
+    {
+        display: inline-block;
+        box-sizing: border-box;
+        
+        width: 20%;
+        text-align: center;
+        
+        img
+        {
+            width: 220px;  
+        }
+    }
+    
+    nav > ul
+    {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        
+        height:100%;
+        padding: 20px 20px;
+        
+        li
+        {
+            flex-grow: 1;      
+        }
+    }
+}
+
+.left
+{
+    background: @eagles-blue;   
+    width: 300px;
+    margin-left: -25px;
+    padding: 0px 25px;
+    
+    position:absolute;
+    
+    img
+    {
+        display: block;
+        max-width: 100%;
+    }
+}
+
+.middle
+{
+    margin-left: 350px;   
 }

@@ -1,6 +1,8 @@
 serve:
     - 'newer:less'
     - 'autoprefixer'
+    - 'node_server'
+    - 'configureProxies'
     - 'connect'
     - 'open:dev'
-    - 'watch:livereload'
+    - 'watch'
